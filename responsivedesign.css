@@ -6,11 +6,8 @@
     grid-template-rows: 0.5fr 0.2fr 1fr 0.5fr;
     grid-gap: 0.2rem;
     grid-template-areas:'header header header'
-
                         'menu menu menu'
-
                         'divCol1 divCol2 divCol3'
-
                         'footer footer footer'
                
 }
@@ -19,7 +16,6 @@
 {
     grid-area: header;
     width:auto;
-    /* height:30px; */
     background-color: aqua;
     padding:2%;
     text-align: center;
@@ -42,7 +38,6 @@
     flex-flow: row;
     width:auto;
     background-color: #23395d;
-    /* height:60px; */
 }
  
 #footer
@@ -60,6 +55,7 @@
 {/* any screen < 600px */
 
     #container{
+        display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.5fr 0.2fr 1fr 1fr 0.5fr;
         grid-template-areas:'header header'
@@ -73,36 +69,24 @@
 
 }
 
-
-
 #divCol1
 {
     grid-area: divCol1;
-    background-color:#BEBEBE;    
-    /* width:25%; */
-    /* padding:2%; */
-
+    background-color:#BEBEBE; 
 }
 #divCol2
 {
     grid-area: divCol2;
     background-color: #DCDCDC;
-    /* width:50%; */
-    /* padding:2%; */
-
 }
 #divCol3
 {
     grid-area: divCol3;
     background-color: #E0E0E0;
-    /* width:25%; */
-    /* padding:2%; */
-
 }
 
 .menu
 {
-    width:10%;
     padding:2%;
     color: white;
 }
